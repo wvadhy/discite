@@ -6,9 +6,6 @@ class Coder():
     __inter = None
     _hashed = []
 
-    def __init__(self, value: int = None):
-        self.decoded = Coder.decode(value)
-
     @staticmethod
     def encode(password: str = None) -> int:
         Coder.__key = random.randint(10**10,10**50)
